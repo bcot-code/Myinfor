@@ -109,7 +109,18 @@ p {
 .about-paragraphs p {
   margin: 10px;
 }
-
+.primary-link {
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+}
+.primary-link:hover {
+  box-shadow: red;
+}
 .email-link {
   display: flex;
   justify-content: center;
@@ -120,4 +131,28 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 35px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .primary-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+  img,
+  #img2,
+  #img3 {
+    display: none;
+  }
 }
