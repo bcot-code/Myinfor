@@ -150,9 +150,4 @@ p {
     text-align: center;
     margin: 0 20px;
   }
-  img,
-  #img2,
-  #img3 {
-    display: none;
-  }
 }
